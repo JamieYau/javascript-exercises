@@ -13,7 +13,7 @@ describe('repeatString', () => {
   test('repeats the string 0 times', () => {
     expect(repeatString('hey', 0)).toEqual('');
   });
-  test.skip('returns ERROR with negative numbers', () => {
+  test('returns ERROR with negative numbers', () => {
     expect(repeatString('hey', -1)).toEqual('ERROR');
   });
   test.skip('repeats the string a random amount of times', function () {
