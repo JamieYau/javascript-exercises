@@ -1,6 +1,6 @@
 const palindromes = function (word) {
-    //remove punctuation
-    word = word.replace(/[^\w\s\']|_/g, "").toLowerCase();
+    //remove punctuation, spaces & makes word lowercase
+    word = word.replace(/[\W_]/g, "").replace(" ", "").toLowerCase();
     console.log(word);
     //reverse word
     let reverse = word.split('').reverse().join('');
