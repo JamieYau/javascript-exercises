@@ -13,10 +13,10 @@ describe('palindromes', () => {
   test('works with multiple words', () => {
     expect(palindromes('A car, a man, a maraca.')).toBe(true);
   });
-  test.skip('works with multiple words', () => {
+  test('works with multiple words', () => {
     expect(palindromes('Animal loots foliated detail of stool lamina.')).toBe(true);
   });
-  test.skip('doesn\'t just always return true', () => {
+  test('doesn\'t just always return true', () => {
     expect(palindromes('ZZZZ car, a man, a maracaz.')).toBe(false);
   });
 });
